@@ -1,0 +1,23 @@
+{
+  "name": "Angular 14 Development Environment",
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:18",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "lts"
+    }
+  },
+  "postCreateCommand": "npm install -g @angular/cli@14.0.0 && npm install",
+  "customizations": {
+    "vscode": {
+      "extensions": ["angular.ng-template", 
+                     "dbaeumer.vscode-eslint",
+                     "ms-vscode.vscode-typescript-next"
+      ]
+    }
+  },
+  "forwardPorts": [4200],
+  "appPort": [4200],
+  "mounts": ["source=${localWorkspaceFolder},target=/workspace,type=bind"],
+  "remoteUser": "node"
+  
+}
