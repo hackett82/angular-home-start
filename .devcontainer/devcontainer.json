@@ -6,7 +6,7 @@
       "version": "lts"
     }
   },
-  "postCreateCommand": "npm install -g @angular/cli@14.0.0 && npm install",
+  "postCreateCommand": "npm install -g @angular/cli@15.0.4 && npm install",
   "customizations": {
     "vscode": {
       "extensions": ["angular.ng-template", 
