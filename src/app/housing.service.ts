@@ -112,7 +112,14 @@ export class HousingService {
   getAllHousingLocations(): HousingLocaion[] {
     return this.housingLocationList;
   }
+  
   getHousingLocationById(id: number): HousingLocaion | undefined {
     return this.housingLocationList.find(housingLocation => housingLocation.id === id);
   }
+
+  submitApplication(firstName: string, lastName: string, email: string, message: string): void {
+    console.log('TODO: submit application to backend');
+    console.log(firstName, lastName, email, message);
+  }
+
 }
